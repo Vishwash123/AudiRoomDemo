@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#8B8686"
+    app:cardCornerRadius="25dp"
+    android:layout_margin="8dp"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/VC_room_rv_item_CL"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/VC_room_rv_item_vc_image"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/profileplaceholder"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/VC_room_rv_item_vc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+
+            android:textColor="@color/black"
+            android:text="Group 1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/VC_room_rv_item_vc_image"
+            app:layout_constraintTop_toTopOf="@+id/VC_room_rv_item_vc_image" />
+
+        <TextView
+            android:id="@+id/VC_room_rv_item_vc_member_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="9dp"
+            android:text="23 members talking"
+            android:textSize="12sp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/VC_room_rv_item_vc_image"
+            app:layout_constraintEnd_toEndOf="@+id/VC_room_rv_item_vc_name"
+
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/VC_room_rv_item_vc_name"
+            app:layout_constraintTop_toBottomOf="@+id/VC_room_rv_item_vc_name"
+            />
+
+        <LinearLayout
+            android:id="@+id/VC_Room_rv_item_users_layout"
+
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/VC_room_rv_item_vc_image">
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/VC_room_button_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/VC_Room_rv_item_users_layout"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/VC_room_rv_item_join_leave"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background = "@drawable/purple_gradient_voicemail"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="4dp"
+
+                android:text="Join"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

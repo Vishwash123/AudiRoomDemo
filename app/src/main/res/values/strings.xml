@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AudioRoomDemoZego</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_or_username">Email or username</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="email">Email</string>
+    <string name="passwordtext">Password</string>
+    <string name="home">Home</string>
+</resources>

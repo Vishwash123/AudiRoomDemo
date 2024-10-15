@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "765067707343",
+    "project_id": "demoaudioroom",
+    "storage_bucket": "demoaudioroom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765067707343:android:d95d39477652b75d2a08ba",
+        "android_client_info": {
+          "package_name": "com.example.audioroomdemozego"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqConC8LR4sZgVoqUtf6txqctD2qGwfsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

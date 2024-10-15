@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bottom solid background (20% of the screen) -->
+    <item
+        android:top="0dp"
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/light_3black" />
+            <corners
+                android:topLeftRadius="30dp"
+                android:topRightRadius="7dp"
+                android:bottomLeftRadius="0dp"
+                android:bottomRightRadius="0dp"/>
+        </shape>
+    </item>
+
+    <!-- Top gradient background (75-80% of the screen) -->
+    <item
+        android:top="0dp"
+        android:bottom="80dp"
+        android:left="0dp"
+        android:right="0dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#9b5de5"
+                android:endColor="#6c1fb0"
+                android:type="linear" />
+            <corners
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp"
+                android:bottomLeftRadius="31dp"
+                android:bottomRightRadius="31dp"/>
+        </shape>
+    </item>
+
+</layer-list>
